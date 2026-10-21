@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Claude: Hide Free Plan Upgrade Notice
 // @namespace    https://github.com/R-Tatara
-// @version      1.0.0
+// @version      2026-10-23
 // @description  Hide the "Free Plan Upgrade" display on claude.ai.
 // @author       R-Tatara
 // @match        https://claude.ai/*

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Gemini: Hide Upgrade Button
 // @namespace    https://github.com/R-Tatara
-// @version      1.0.0
+// @version      2026-10-23
 // @description  Hide the "Upgrade" button in the top-right corner of Gemini
 // @author       R-Tatara
 // @match        https://gemini.google.com/*

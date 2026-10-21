@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ChatGPT: Hide Upgrade Buttons & Free Label
 // @namespace    https://github.com/R-Tatara
-// @version      1.0.0
+// @version      2026-10-23
 // @description  chatgpt.com の「アップグレード」ボタンと「無料」表示を非表示にする
 // @author       R-Tatara
 // @match        https://chatgpt.com/*
