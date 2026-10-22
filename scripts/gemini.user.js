@@ -19,10 +19,12 @@
     [data-test-id="g1-dynamic-advanced-upsell-button"],
     [data-test-id="bard-g1-dynamic-upsell-menu-button"],
     g1-dynamic-upsell-button,
-    .buttons-container.adv-upsell {
+    .buttons-container.adv-upsell,
+    gem-button[fonticonname="download"],
+    gem-button:has(span[_ngcontent-ng-c3223631938]:not(:empty)) {
       display: none !important;
     }
   `);
 
-  console.log('[Hide Upgrade Button] Style applied successfully.');
+  console.log('[Hide Upgrade & Download Buttons] Style applied successfully.');
 })();
