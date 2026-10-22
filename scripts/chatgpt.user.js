@@ -33,8 +33,20 @@
   function hideUpgradeButtons() {
     for (const el of document.querySelectorAll('button, a')) {
       if (el.dataset.hideUpgrade === 'true') continue;
-      const text = el.textContent.trim();
-      if (text.length <= MAX_TEXT_LENGTH && UPGRADE_PATTERN.test(text)) {
+  
+      // 要素を複製し、非表示用テキストやアイコンを除外
+      const clone = el.cloneNode(true);
+  
+      clone.querySelectorAll(
+        '.sr-only, [aria-hidden="true"]'
+      ).forEach(node => node.remove());
+  
+      const text = clone.textContent.trim();
+  
+      if (
+        text.length <= MAX_TEXT_LENGTH &&
+        UPGRADE_PATTERN.test(text)
+      ) {
         el.dataset.hideUpgrade = 'true';
       }
     }
