@@ -33,5 +33,13 @@
     }
   `);
 
+  // Method C: Hide the "Freeプラン" and "アップグレード" badge.
+  // Targets the parent element containing the upgrade link and close button.
+  GM_addStyle(`
+    div:has(> span > a[href="/upgrade"]):has(> button[aria-label="アップグレードバナーを閉じる"]) {
+      display: none !important;
+    }
+  `);
+
   console.log('[Hide Free Plan Notice] Style applied successfully.');
 })();
